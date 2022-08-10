@@ -30,7 +30,7 @@ function getValueFromObjectByDate(object, date) {
     return null;
   }
 
-  if (object.hasOwnProperty(date)) {
+  if (Object.prototype.hasOwnProperty.call(object, date)) {
     return object[date];
   }
 
