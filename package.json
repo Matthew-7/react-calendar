@@ -22,7 +22,7 @@
     "postinstall": "husky install",
     "prepack": "yarn clean && yarn build",
     "test": "yarn lint && yarn jest",
-    "prepare": "husky install"
+    "prepare": "husky install && yarn prepack"
   },
   "keywords": [
     "calendar",
